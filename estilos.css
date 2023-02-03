@@ -20,22 +20,36 @@
 }
 body {
   background: #183b50;
+  margin: 50px;
+}
+
+.contenedor {
+  margin: 50px auto;
+  width: 80%;
 }
 
 header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: wrap column;
-          flex-flow: wrap column;
-  gap: 30px;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+  gap: 50px;
   width: 400px;
 }
 header input {
-  width: 130px;
+  width: 110px;
   padding: 12px 15px;
+  border: none;
+  border-radius: 5px;
 }
 
 button {
@@ -46,7 +60,6 @@ button {
           transform: translateX(2px);
   -webkit-transform: translatey(2px);
           transform: translatey(2px);
-  margin-left: 15px;
   background: #b9d8ff;
   padding: 12px 22px;
   -webkit-box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.75);
@@ -65,13 +78,36 @@ button:hover {
   background: #a3c3eb;
 }
 
+.contenido {
+  overflow: auto;
+  background: #052a35;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
 #img {
-  margin: 80px 0 0 80px;
   -webkit-animation: rotar 1.5s linear infinite;
           animation: rotar 1.5s linear infinite;
   border-radius: 8px;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  margin: 80px;
 }
 
 #btn3 {
-  width: 150px;
+  width: 80%;
+}
+
+#agregar {
+  display: block;
 }/*# sourceMappingURL=estilos.css.map */
