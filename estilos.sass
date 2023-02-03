@@ -1,0 +1,42 @@
+@keyframes rotar
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(360deg)
+
+body
+  background: #183b50
+
+header
+  display: flex
+  flex-flow: wrap column
+  gap: 30px
+  width: 400px
+  input
+    width: 130px
+    padding: 12px 15px
+
+button
+  width: 120px
+  font-family: sans-serif
+  text-transform: capitalize
+  transform: translateX(2px)
+  transform: translatey(2px)
+  margin-left: 15px
+  background: #b9d8ff
+  padding: 12px 22px
+  box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.75)
+  transition: box-shadow .2s
+  transition: background .2s
+  &:hover
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75)
+    cursor: pointer
+    background: #a3c3eb
+
+#img
+  margin: 80px 0 0 80px
+  animation: rotar 1.5s linear infinite
+  border-radius: 8px
+
+#btn3
+  width: 150px
