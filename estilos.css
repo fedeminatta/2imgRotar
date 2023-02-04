@@ -102,6 +102,10 @@ button:hover {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
   margin: 80px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 #btn3 {
